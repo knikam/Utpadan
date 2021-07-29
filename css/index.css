@@ -9,10 +9,18 @@ html{
 }
 
 body{
+    background-image: url('../images/Hexagon.svg');
     font-family: "Poppins";
     font-size: 14px;
     font-size: 400;
-    background-color: white;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, address {
     margin: 0;
     padding: 0;
 }
@@ -132,7 +140,6 @@ li .active{
     display: flex;
     flex-direction: row;
     flex: 3;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1259%26quot%3b)' fill='none'%3e%3cpath d='M25.21 -48.26L73.71 -20.26L73.71 35.74L25.21 63.74L-23.29 35.74L-23.29 -20.26zM73.71 203.74L122.21 231.74L122.21 287.74L73.71 315.74L25.21 287.74L25.21 231.74zM73.71 371.74L122.21 399.74L122.21 455.74L73.71 483.74L25.21 455.74L25.21 399.74zM25.21 455.74L73.71 483.74L73.71 539.74L25.21 567.74L-23.29 539.74L-23.29 483.74zM73.71 539.74L122.21 567.74L122.21 623.74L73.71 651.74L25.21 623.74L25.21 567.74zM122.21 -48.26L170.71 -20.26L170.71 35.74L122.21 63.74L73.71 35.74L73.71 -20.26zM170.71 35.74L219.21 63.74L219.21 119.74L170.71 147.74L122.21 119.74L122.21 63.74zM122.21 119.74L170.71 147.74L170.71 203.74L122.21 231.74L73.71 203.74L73.71 147.74zM122.21 455.74L170.71 483.74L170.71 539.74L122.21 567.74L73.71 539.74L73.71 483.74zM219.21 -48.26L267.7 -20.26L267.7 35.74L219.21 63.74L170.71 35.74L170.71 -20.26zM267.7 35.74L316.2 63.74L316.2 119.74L267.7 147.74L219.21 119.74L219.21 63.74zM219.21 119.74L267.7 147.74L267.7 203.74L219.21 231.74L170.71 203.74L170.71 147.74zM267.7 371.74L316.2 399.74L316.2 455.74L267.7 483.74L219.21 455.74L219.21 399.74zM219.21 455.74L267.7 483.74L267.7 539.74L219.21 567.74L170.71 539.74L170.71 483.74zM364.7 371.74L413.2 399.74L413.2 455.74L364.7 483.74L316.2 455.74L316.2 399.74zM413.2 -48.26L461.7 -20.26L461.7 35.74L413.2 63.74L364.7 35.74L364.7 -20.26zM461.7 371.74L510.2 399.74L510.2 455.74L461.7 483.74L413.2 455.74L413.2 399.74zM558.7 203.74L607.2 231.74L607.2 287.74L558.7 315.74L510.2 287.74L510.2 231.74zM558.7 539.74L607.2 567.74L607.2 623.74L558.7 651.74L510.2 623.74L510.2 567.74zM607.2 -48.26L655.69 -20.26L655.69 35.74L607.2 63.74L558.7 35.74L558.7 -20.26zM655.69 35.74L704.19 63.74L704.19 119.74L655.69 147.74L607.2 119.74L607.2 63.74zM655.69 539.74L704.19 567.74L704.19 623.74L655.69 651.74L607.2 623.74L607.2 567.74zM704.19 119.74L752.69 147.74L752.69 203.74L704.19 231.74L655.69 203.74L655.69 147.74zM752.69 203.74L801.19 231.74L801.19 287.74L752.69 315.74L704.19 287.74L704.19 231.74zM704.19 287.74L752.69 315.74L752.69 371.74L704.19 399.74L655.69 371.74L655.69 315.74zM752.69 371.74L801.19 399.74L801.19 455.74L752.69 483.74L704.19 455.74L704.19 399.74zM704.19 455.74L752.69 483.74L752.69 539.74L704.19 567.74L655.69 539.74L655.69 483.74zM849.69 35.74L898.19 63.74L898.19 119.74L849.69 147.74L801.19 119.74L801.19 63.74zM849.69 203.74L898.19 231.74L898.19 287.74L849.69 315.74L801.19 287.74L801.19 231.74zM801.19 287.74L849.69 315.74L849.69 371.74L801.19 399.74L752.69 371.74L752.69 315.74zM801.19 455.74L849.69 483.74L849.69 539.74L801.19 567.74L752.69 539.74L752.69 483.74zM898.19 287.74L946.69 315.74L946.69 371.74L898.19 399.74L849.69 371.74L849.69 315.74zM946.69 371.74L995.19 399.74L995.19 455.74L946.69 483.74L898.19 455.74L898.19 399.74zM995.19 287.74L1043.68 315.74L1043.68 371.74L995.19 399.74L946.69 371.74L946.69 315.74zM1043.68 539.74L1092.18 567.74L1092.18 623.74L1043.68 651.74L995.19 623.74L995.19 567.74zM1140.68 539.74L1189.18 567.74L1189.18 623.74L1140.68 651.74L1092.18 623.74L1092.18 567.74zM1189.18 287.74L1237.68 315.74L1237.68 371.74L1189.18 399.74L1140.68 371.74L1140.68 315.74zM1286.18 -48.26L1334.68 -20.26L1334.68 35.74L1286.18 63.74L1237.68 35.74L1237.68 -20.26zM1334.68 371.74L1383.18 399.74L1383.18 455.74L1334.68 483.74L1286.18 455.74L1286.18 399.74zM1383.18 -48.26L1431.68 -20.26L1431.68 35.74L1383.18 63.74L1334.68 35.74L1334.68 -20.26zM1431.68 203.74L1480.17 231.74L1480.17 287.74L1431.68 315.74L1383.18 287.74L1383.18 231.74zM1383.18 455.74L1431.68 483.74L1431.68 539.74L1383.18 567.74L1334.68 539.74L1334.68 483.74z' stroke='rgba(30%2c 111%2c 92%2c 0.12)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1259'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 .slider{
     height: 100%;
@@ -156,6 +163,7 @@ li .active{
 }
 
 .content h1{
+    text-transform: uppercase;
     font-size: 32px;
 }
 
@@ -203,30 +211,26 @@ li .active{
 
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: .8s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: .8s;
+    animation-duration: 2s;
   }
   
   @-webkit-keyframes fade {
-    from{
-        opacity: 0;
-        transform: scale(.2);
+    0%{ 
+        transform: translateX(-100%); 
     }
-
-    to{
-        opacity: 1;
+    100%{ 
+        transform: translateX(0%); 
     }
   }
   
   @keyframes fade {
-    from{
-        opacity: 0;
-        transform: scale(.2);
+    0%{ 
+        transform: translateX(-100%); 
     }
-
-    to{
-        opacity: 1;
+    100%{
+        transform: translateX(0%); 
     }
     /* 0%{opacity: 0}
     10%{opacity: .1;}
@@ -268,25 +272,152 @@ li .active{
     opacity: 0;
 }
 
-/* Brand Section*/
-
-#brands{
-    height: 100vh;
-}
+/* About Section*/
 
 #aboutus{
+    position: relative;
+    padding: 2vw 0;
+    height: auto;
+}
+
+#aboutus h1{
+    width: fit-content;
+    display: block;
+    margin: 5vw 0 0 5vw;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#aboutus h1:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:3px;
+    display:block;
+    width:auto;
+  }
+
+#aboutus .aboutus{
+    display: flex;
+    flex: 2;
+}
+
+#aboutus .aboutus .left{
+    flex: 1;
+}
+
+#aboutus .aboutus .left h4{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 1vw 0 0vw;
+    margin: 2vw 0 0 5vw;
+    text-align: justify;
+}
+
+#aboutus .aboutus .right{
+    flex: 1;
+}
+
+#aboutus .aboutus .right .row{
+    display: flex;
+    justify-content: center;
+}
+
+#aboutus .aboutus .right .card{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 2vw;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    transition: ease-in .3s;
+}
+
+#aboutus .aboutus .right .card:hover{
+    background-color: var(--dark-text);
+    color: var(--white);
+}
+
+#aboutus .aboutus .right .card h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#aboutus .aboutus .right .card p{
+    text-align: center;
+}
+
+
+/* Brand Section */
+#brands{
+    display: flex;
     height: 100vh;
 }
 
+#brands h1{
+    margin: 5vw 0 0 5vw;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#brands h1:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:3px;
+    display:block;
+    width:auto;
+}
+
+/* Reaction Section */
 #reaction{
+    display: flex;
     height: 100vh;
+}
+
+#reaction h1{
+    margin: 5vw 0 0 5vw;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#reaction h1:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:3px;
+    display:block;
+    width:auto;
+}
+
+/* Feedback Section */
+#feedback{
+    display: flex;
+    height: 100vh;
+}
+
+#feedback h1{
+    margin: 5vw 0 0 5vw;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#feedback h1:after{
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width:3px;
+    display:block;
+    width:auto;
 }
 
 /* Footer */
 
 #footer{
     height: auto;
-    background: var(--text);  /* fallback for old browsers */
+    padding: 2vw 0;
+    background: var(--dark-text);  /* fallback for old browsers */
 }
 
 #footer .footer{
@@ -302,6 +433,14 @@ li .active{
     flex-direction: column;
     padding: 0 3vw;
 }
+
+#footer .links h1,.social-media h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
 #footer .links ul{
     padding: 0;
 }
